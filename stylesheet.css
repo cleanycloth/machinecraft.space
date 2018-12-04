@@ -1,0 +1,83 @@
+@font-face {
+	font-family: ibmvga8;
+	src: url(ibmvga8.ttf);
+}
+body {
+	background-color:#000000;
+	color: #AAAAAA;
+	}
+
+.blink_text {
+  opacity: 0;
+  animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+  from,
+  49.9% {
+    opacity: 0;
+  }
+  50%,
+  to {
+    opacity: 1;
+  }
+}
+h1 {
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+	font-family: 'ibmvga8', Consolas, Arial;
+	font-weight: lighter;
+}
+h2 {
+	font-family: 'ibmvga8', Consolas, Arial;
+	font-weight: lighter;
+	line-height: 6px;
+}
+a:link {
+	color: #AAAAAA;
+}
+a:visited {
+	color: #AAAAAA;
+}
+a:hover {
+	color: #AAAAAA;
+}
+a:active {
+	color: #AAAAAA;
+}
+free::before {
+	content: "31,533.44";
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+	font-family: 'ibmvga8', Consolas, Arial;
+	font-weight: lighter;
+	font-size: 24px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #AAAAAA;
+}
+span {
+	caret-color: transparent;
+}
+.text-box {
+ border: solid 0px black;
+ min-width:5px;
+ padding: 0px;
+ display: inline-block;
+}
+
+.text-box:focus{
+  outline:0;
+}
