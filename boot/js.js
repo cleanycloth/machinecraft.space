@@ -8,21 +8,23 @@ function animateValue() {
         if (current == 32768) {
             clearInterval(timer);
             document.getElementById('line5').innerHTML = "WAIT...";
+            document.getElementById('line13').innerHTML = ""
+            document.getElementById('line14').innerHTML = ""
             setTimeout(function() {
-                document.getElementById('line5').innerHTML = "Pri Master: Seagate Barracuda 60G"
-            },2000);
+                document.getElementById('line5').innerHTML = "Pri Master: 3.60     ST3207410A"
+            },3700);
             setTimeout(function() {
-            document.getElementById('line6').innerHTML = "Pri Slave: QUANTUM FIREBALL SE 2.5"
-            },2100);
+            document.getElementById('line6').innerHTML = "Pri Slave: NAR61590 Maxtor 6E020L0"
+            },3800);
             setTimeout(function() {
-            document.getElementById('line7').innerHTML = "Sec Master: SONY CD/DVD-ROM"
-            },2200);
+            document.getElementById('line7').innerHTML = "Sec Master: NYK3     SONY CD-RW CRX320E"
+            },3900);
             setTimeout(function() {
-            document.getElementById('line8').innerHTML = "Sec Slave: ASUS DRW-1814BL  1.13"
-            },2300);
+            document.getElementById('line8').innerHTML = "Sec Slave: JL10     HL-DT-ST DVDRAM GSA-H10N"
+            },4000);
             setTimeout(function() {
             window.location.href = "/boot/blink";
-            },4000)
+            },4900)
         };
     });
     },1000);
@@ -31,11 +33,11 @@ function animateValue() {
             
 setTimeout(function() {
     document.getElementById('line1').innerHTML = "AMIBIOS (C)1996 American Megatrends Inc.,"
-    document.getElementById('line2').innerHTML = "A6117MS V2.0 070999"
-    document.getElementById('line3').innerHTML = "Intel Pentium II - 400MHz"
-    document.getElementById('line4').innerHTML = "Checking NVRAM..."
+    document.getElementById('line2').innerHTML = "A615601 V2.0 121498"
+    document.getElementById('line3').innerHTML = "Pentium II - 400MHz"
+    document.getElementById('line4').innerHTML = "Checking NVRAM.."
     document.getElementById('line13').innerHTML = "(C) American Megatrends Inc.,"
-    document.getElementById('line14').innerHTML = "61-0208-001169-00111111-071595-440LX-1440L000-H"
+    document.getElementById('line14').innerHTML = "61-1214-001169-00111111-071595-440BX-1440B000-H"
     document.getElementById("amilogo").style.display = "inline";
     animateValue();
-}, 2000);
+}, 7000);
