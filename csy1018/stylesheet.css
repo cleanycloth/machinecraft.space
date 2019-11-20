@@ -1,0 +1,134 @@
+/*All comments will be underneath the block of code it is commenting on.*/
+@font-face {
+	font-family: ibmvga8;
+	src: url(ibmvga8.ttf);
+}
+/* This block loads the font for the website.*/
+body {
+	font-family: "ibmvga8", cursive;
+	background-color: #EEEEEE;
+	color: #000000;
+	font-size: 1.3em;
+}
+/*This changes the bulk of the website. Here, it changes the font to the font I loaded previously, sets the background
+colour to something more akin to a website, changes the font colour to black (probably not necessary but done just in case)
+and sets the font size to something readable on a desktop and mobile device.*/
+.sitetitle {
+	font-size: 4.5em;
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 3px dotted #000000;
+}
+/*This block only changes the title of the site. This sets the font to be much larger, centres it, gives it a bit of a margin
+from the top of the website so it doesn't sit right against the top of your browser, gives it a bit of space from the line below,
+and gives it a slight dotted border to make it look nice.*/
+.date {
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+/*This changes the date text. The font is slightly larger than the body text to make it stand out, also aligns it to the centre,
+and gives it a slight margin so it's not riding up against the borders.*/
+.menu {
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 5px;
+	border-top: 3px dotted #000000;
+
+}
+/*This is the menu navigation bar CSS. This is relatively the same as the date block but it separates the two by adding a border,
+and a slightly smaller margin.*/
+.columns {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	border-top: 3px dotted #000000;
+	padding: 10px;
+}
+/*This adjusts the columns. Flex is enabled - this is what allows the columns to shift with the display size changes. The columns
+are centred to the page much like a newspaper would be, some margins and borders are defined, and some padding is given to give
+the content some space.*/
+.columns > div {
+	flex-basis: 35%;
+	text-align: center;
+	border-right: 3px double #000000;
+	border-left: 3px double #000000;
+	padding: 0 10px;
+}
+/*This special bit of code changes the divs inside the columns specifically. Flex-basis sets the initial size of the item it's flexing.
+In this case, it's 35%. This means that the flex item will start at least 35% of the parent flex container, in this case that would basically
+be the whole screen it's sitting on. Text align is used to centre the titles (and, oddly, the images too). Borders are put on the left
+and right sides to separate the content into visible columns, and some padding is added to separate things a bit.*/
+.columns div p {
+	text-align: left;
+}
+/*The text is then aligned left. Only the titles and images should be centred.*/
+h1 {
+	font-size: 2.5em;
+}
+/*Header 1, which is used for the column titles, is given a decently sized font size.*/
+.footer {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 5px;
+}
+/*The footer is given a centred alignment, a smaller font size, and a margin of 5px to pull it away from the content and to make it stand out.*/
+img {
+	width: 70%;
+}
+/*This sets the maximum image width to 70%. Any larger and the images would overscan from the columns and ruin everything.*/
+.blink_text {
+  opacity: 0;
+  animation: blinking 1s linear infinite;
+}
+/*This code allows the underscore in the title to blink. It tells the browser to run it for 1 second, infinitely, starting invisible.*/
+@keyframes blinking {
+  from,
+  49.9% {
+    opacity: 0;
+  }
+  50%,
+  to {
+    opacity: 1;
+  }
+}
+/*This is what actually makes it blink. Normally without this the underscore would fade in an out, but this makes it so that at 0-49.9% of the
+animation, it won't be visible. Then, 50-100%, it will be 100% visible, with no transparency. The browser runs this code over and over.
+This code is from my personal site, https://machinecraft.space, but is originally from this page:
+https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3/16344389
+See the answer by "Josketres" for the code I used. It is slightly modified.*/
+.txt {
+	display: inline;
+}
+/*This makes the date and time texts display on one line. */
+@media only screen and (max-width: 1152px) {
+	.columns {
+		flex-direction: column;
+	}
+
+	.columns > div {
+		padding: 0 5px;
+	}
+}
+/*This bit of code is super important. This is what actually makes the website change the layout depending on the screen size.
+The way this works is as follows. The browser looks for the screen size, and checks, in this case, if it is over 1152px wide or not.
+If it is, then the default flex direction is enabled. In this case, it is set to spread the content across the page as normal.
+If the screen size is less than 1152px wide, the column flex direction is enabled, and some padding is added to pull the content from
+the sides of the screen in slightly. The column flex direction is what turns the page from a multi column layout into a single column layout.*/
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #00aa00;
+}
+a:active {
+	color: #000000;
+}
+/*This makes links black, including visited links, but makes the hover colour green. */
+ul {
+	text-align: left;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stylesheet.css"><!--Loads the CSS file from the root folder.-->
+<title>The DOS Archives // Reviews</title> <!--Sets the website's title in the tab at the top of your browser.-->
+</head>
+<body onload="startTime()"><!--Starts running the JavaScript script.-->
+<div class="sitetitle">C:\The DOS Archives<span class="blink_text">_</span></div><!--The blink_text span allows the underscore cursor to blink. The code for this is in the CSS file.-->
+<div class="date"> <p id="fdate" class="txt"></p> @ <p class="txt" id="txt"></p></div><!--Some Javascript trickery is used here to display the time and date, and replace the content in the p tags with the resulting output.-->
+<div class="menu"><p><a href=index.html>Home</a> // <a style="color:blue;" href=reviews.html>Reviews</a> // <a href=glossary.html>Glossary</a> // <a href=jobs.html>Jobs</a> // <a href=tutorials.html>Tutorials</a></p></div>
+<!--This long line of code at the top produces the navigation bar that you can see at the top of the page. A small piece of inline CSS is used to highlight the current page. Normally I would recommend against this but for such a small thing I think it's okay here.-->
+<script src="datetime.js"></script> <!--Loads the JavaScript for the website.-->
+
+<div class="columns"><!--Some CSS is used here to add columns to the website that automatically resize depending on the window size or -->
+	<div><!--divs are used to divide up the content.-->
+		<h1>Review 1:</h1>
+		<a href="https://thimble.mozilla.org"><h1>Mozilla Thimble</h1></a>
+		<p>Thimble is an online tool used to write HTML, CSS, and JavaScript in a browser, allowing you to view changes on the fly.</p>
+		<a href="thimble.png"><img src="thimble.png" alt="A screenshot of Thimble, with the default New Project code written in it."></a>
+		<p><i>A screenshot of Thimble, with the default "New Project" code written in it. Click on the image to get a better view.</i></p><!--Subtitling an image is very useful for screen reader users and for general captioning of the image. Italics are used to show that the text is not part of the article, instead just a description of something on the page.-->
+		<p>Mozilla Thimble is an excellent tool for beginners who want to learn how to code a website, and more advanced people who need storage for files, additional pages, etc.</p>
+		<p>Mozilla, the creators of the Firefox web browser, are very focussed about making things free and Thimble is no exception. Thimble is completely free and there are seemingly no restrictions as to the content you can upload. For instance, you can upload multiple pictures, JavaScript files, HTML files etc. and link them all together.</p>
+		<p>Thimble has a very decent folder structure system and does not get in the way of your code. A bonus above Codepen (as you can see in the other review) is that you have to link the CSS manually, giving you flexibility to name it however you want and place it wherever you want.</p>
+		<p>You can choose to publish your work if you wish, or keep it tied to your account in secrecy. Thimble also has an option to change the preview size from desktop to mobile, very useful when testing dyanmic websites.</p>
+		<p>Thimble makes it super easy to download and upload files. You can right click in the file manager and upload and download separate files, or to download the entire website you can click on your name and click "Download files (.zip)" instead and it will send you your entire project in one go. Useful!</p>
+		<p>As mentioned, Thimble has support for JavaScript - in fact it has a full JavaScript console built right in. You can grab useful code snippets from the Thimble Library, and even take other people's Thimble projects and remix them.</p>
+		<p>You can even edit the CSS from any HTML tag you're using like &lt;h2&gt; for instance, by pressing CTRL/CMD + E over a tag. It will then pop the stylesheet up for the specific tag, useful if you've got a lot of CSS.</p>
+		<p>Overall, this has been a VERY useful tool in letting me understand how websites work and why things go wrong when they do (or when things go right). A brilliant tool that everyone should use.</p>
+		<p>Rating: 5/5 - Super useful bit of kit that does exactly what it says on the thimble.</p>
+		<p>UPDATE 11/01/19: As of the 16th of December 2019, Thimble will be replaced entirely with Glitch and all projects and account data will be removed. There is still time now to create projects or move existing ones to Glitch however. You can find out more about this <a href="https://medium.com/read-write-participate/a-note-about-thimble-b8ba0a51b8fd">here.</a></p>
+	</div>
+	<div>
+		<h1>Review 2:</h1>
+		<a href="https://codepen.io"><h1>Codepen</h1></a>
+		<p>Codepen is also an online tool used to write HTML, CSS, and JavaScript within a browser and allows you to view changes on the fly, much like Thimble.</p>
+		<a href="codepen.png"><img src="codepen.png" alt="A screenshot of Codepen, with some example code written in it."></a>
+		<p><i>A screenshot of Codepen, with some example code written in it. Click on the image to get a better view.</i></p>
+		<p>Codepen is a great tool for coding all kinds of websites It has a folder structure system, allowing for uploads of images and other files your site might need. </p>
+		<p>However, for these more advanced features, you have to sign up for a pro account - the anonymous layout only allows for one page edit at a time with no structure.</p>
+		<p>Pro features start at $8 a month for the basic pro features, $12 a month for more advanced pro features, and then $26 a month for the most advanced features.</p>
+		<p>You can find out more about pro <a href="https://codepen.io/accounts/signup">here.</a> NOTE: I am not being sponsored for this review.</p>
+		<p>As I have not tried any of these Pro features, I am simply reviewing the free stuff.</p>
+		<p>The free account comes with unlimited public pens, posts, and collaborations, and templates. It comes with a debug view, an embed theme, and one project with 10 files. You need to buy a pro license to be able to upload more than that.</p>
+		<p>The user interface is simple and easy to use. Within seconds I was able to put text on the screen and format it to be blue with an orange background.</p>
+		<p>You can title your pen and save it, if you sign up.</p>
+		<p>Codepen also allows you to take anyone else's pen and remix it, or simply view it and see how others have made their sites.</p>
+		<p>I think the only problem I find with it is, in this mode at least, the CSS and HTML are connected automatically. In a way this is a good thing as it makes it quicker for you to do little tests, but if you want to export this code and use it elsewhere you'll still have to modify the code manually to add in the CSS link, name the files correctly, etc.</p>
+		<p>Overall, it has helped me quite a lot in my studies, and is a great learning tool for students and teachers alike, as well as in non-teaching roles.</p>
+		<p>Rating: 4/5 - A very useful tool that's simple to use, but the more advanced features are paywall locked.</p>
+	</div>
+</div>
+<div class="footer">(C)1987-2019 The DOS Archives</div> <!--The footer is given its own class to centre it and give it some space underneath the document.-->
+</body>
+</html>

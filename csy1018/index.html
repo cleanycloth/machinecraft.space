@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stylesheet.css"> <!--Loads the CSS file from the root folder.-->
+<title>The DOS Archives // Home</title> <!--Sets the website's title in the tab at the top of your browser.-->
+</head>
+<body onload="startTime()"><!--Starts running the JavaScript script.-->
+<div class="sitetitle">C:\The DOS Archives<span class="blink_text">_</span></div> <!--The blink_text span allows the underscore cursor to blink. The code for this is in the CSS file.-->
+<div class="date"> <p id="fdate" class="txt"></p> @ <p class="txt" id="txt"></p></div> <!--Some Javascript trickery is used here to display the time and date, and replace the content in the p tags with the resulting output.-->
+<div class="menu"><p><a style="color:blue;" href=index.html>Home</a> // <a href=reviews.html>Reviews</a> // <a href=glossary.html>Glossary</a> // <a href=jobs.html>Jobs</a> // <a href=tutorials.html>Tutorials</a></p></div>
+<!--This long line of code at the top produces the navigation bar that you can see at the top of the page. A small piece of inline CSS is used to highlight the current page. Normally I would recommend against this but for such a small thing I think it's okay here.-->
+<script src="datetime.js"></script> <!--Loads the JavaScript for the website.-->
+<div class="columns"><!--Some CSS is used here to add columns to the website that automatically resize depending on the window size or -->
+	<div><!--divs are used to divide up the content.-->
+		<h1>The Team</h1> <!--Headers for each of the colums start with h1.-->
+		<p>Hello! Welcome to The DOS Archives, your one stop shop for web development news and more!</p> <!--p is used for the main bulk of text for the website.-->
+		<img src="me.jpg" alt="A picture of me."> <!--Loads an image from the website root folder.-->
+		<p>That's me! My name's Aidan. I'm the one who coded this website from scratch and developed all of what you see here. I'm basically "the team", it's just me! ^^</p>
+		<p>Disclaimer: Some code has been borrowed from my other personal website, which you can find <a href=https://machinecraft.space>here</a>.</p>
+		<p>The font used on this website, "IBMVGA8", originally developed by IBM Corporation and adapted into a font by VileR, can be found <a href=https://int10h.org/oldschool-pc-fonts/fontlist>here</a>. The font is licensed under a Creative Commons Attribution-ShareAlike 4.0 International license.</p>
+	</div>
+	<div>
+		<h1>Who are you?</h1>
+		<p>Hello! Like I said in the column to the left, my name is Aidan. I'm a 19 year old student at the University of Northampton, and I'm thoroughly enjoying my time here.</p>
+		<p>I have been into computers for many years, over a decade now. Computers have basically been a part of my life since I was born, starting with my parents' Packard Bell Club PC.</p>
+		<p>It looked something like this: (my original machine is now long gone)</p>
+		<a href="https://www.gumtree.com/p/desktop-workstation-pcs/packard-bell-club-550-computer-/1296592988"><img src="packard.jpg" alt="An image of my first computer."></a> <!--Here, an image is referenced to the source using an a tag. This turns the entire image into a web link.-->
+		<p><i>Click image for source.</i></p>
+		<p>It introduced me to the world of Windows 98FE and PC gaming, including PC Play and Learn, of which I still have a lot of discs for. Years and years on from then I still tinker with PCs in my spare time, from new to old. I recently rebuilt a far more capable machine based on the same CPU of my first PC, a Pentium II, and put it into the case of the first PC I ever bought myself, an Acer Aspire M1610.</p>
+		<p>It looks like this:</p>
+		<a href="https://www.engadget.com/products/acer/aspire/m1610/"><img src="acer.jpg" alt="An image of the PC I first purchased myself."></a>
+		<p><i>Click image for source.</i></p>
+		<p>And from there, the sky is the limit.</p>
+	</div>
+	<div>
+		<h1>Site Purpose</h1>
+		<p>This site is being developed as part of the University of Northampton CSY1018 Web Development course.</p>
+		<img src="broken.png" alt="An example pixelart copy of the IE6 broken image logo, made by me.">
+		<p>As part of this course, I am being asked to write a website in a newspaper layout, akin to something like The New York Times.</p>
+		<p>The site needs to have five pages, which are:</p>
+		<ul> <!--Starts an unordered list. It is set to align to the left of the document, or in this case, the column, in the CSS.-->
+			<li>Landing page (index.html)</li> <!--li is used to create a bullet-pointed list.-->
+			<li>Reviews (reviews.html)</li>
+			<li>Glossary (glossary.html)</li>
+			<li>Jobs (jobs.html)</li>
+			<li>Tutorials (tutorials.html)</li>
+		</ul>
+		<p>You can find links to these pages above, using the toolbar. The toolbar will light up blue according to the page you are on.</p>
+	</div>
+	<div>
+		<h1>Useful Links</h1>
+		<p>You can find some useful links here, for instance the CSS file, the GitHub page, my personal GitHub page, and other things.</p>
+		<p><a href=http://bit.ly/2SFT4Za>Assignment 1 Brief (Google Docs)</a></p>
+		<p><a href=stylesheet.css>Website Stylesheet (stylesheet.css)</a></p>
+		<p><a href=https://github.com/cleanycloth>Personal GitHub Page</a></p>
+		<p><a href=https://github.com/UoN-Computing/rayner_18415915>This site's GitHub page (Private)</a></p>
+	</div>
+</div>
+<div class="footer">(C)1987-2019 The DOS Archives</div> <!--The footer is given its own class to centre it and give it some space underneath the document.-->
+</body>
+</html>
