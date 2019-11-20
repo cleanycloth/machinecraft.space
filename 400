@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>C:\>400 // Bad Request</title>
+<link rel="stylesheet" href="https://machinecraft.space/stylesheet.css">
+</head>
+<body>
+<h2>&nbsp;</h2>
+<h2>C:\>401</h2>
+<h2>System error 400 has occurred.</h2>
+<h2>&nbsp;</h2>
+<h2>Hm. Looks like you've given me a bad request.</h2>
+<h2>This could be due to the fact you've sent me secure data over HTTP,</h2>
+<h2>or it could be something else. The best I can say is try again.</h2>
+<h2>Sorry about the lack of fonts, too...</h2>
+<h2>&nbsp;</h2>
+<h2>C:\><a href="\">home.com</a><span class="blink_text">_</span></h2>
+</body>
+</html>

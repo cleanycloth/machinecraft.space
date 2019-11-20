@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>C:\win95>win.com</title>
+	<link rel="stylesheet" href="vcrstyle.css">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+<h3>ARE YOU READY?</h3>
+<h2 id="txt"></h2>
+</body>
+</html>
